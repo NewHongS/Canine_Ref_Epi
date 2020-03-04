@@ -69,7 +69,7 @@ os.chdir(path)
 timeNow ()
 print("# 01_02_Extract_mapped_info_inhg38.bed")
 
-command = "python 01_extract_mapped_in_canFam3_bed.py %s/extract_mapped_info.txt \
+command = "python cor_01_extract_mapped_in_canFam3_bed.py %s/extract_mapped_info.txt \
 	%s %s/01_extract_mapped_in_canFam3" % (outFold, canFam3_bed_bw, outFold)
 
 os.system(command)
@@ -115,7 +115,7 @@ os.chdir(path)
 timeNow ()
 print("# 03_hg38_canFam3_bwtool_result_matching")
 
-command = "python 02_match_pair_info.py %s/02_bwtools/hg38 %s/02_bwtools/canFam3 %s/03_matching_file" \
+command = "python cor_02_match_pair_info.py %s/02_bwtools/hg38 %s/02_bwtools/canFam3 %s/03_matching_file" \
 	% (outFold, outFold, outFold)
 
 os.system(command)
@@ -139,7 +139,7 @@ os.system("rm -r %s/%s/03_matching_file" % (path, outFold))
 timeNow ()
 print("## 04_Calculate correlation")
 
-command = "python 03_calculate_correlation.py %s/03_matching_file_edit \
+command = "python cor_03_calculate_correlation.py %s/03_matching_file_edit \
 	input_correlation_zero_table %s/04_correlation" % (outFold, outFold)
 
 os.system(command)
