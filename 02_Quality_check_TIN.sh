@@ -14,4 +14,3 @@ grep "protein_coding" ${gtf_file_name}.gtf > ${gtf_file_name}.CDG.gtf
 
 ## calculate TIN score
 for bam in *.bam;do pre=${bam%%.*};echo $pre;tin.py -i $bam -r ${gtf_file_name}.CDG.bed;done
-

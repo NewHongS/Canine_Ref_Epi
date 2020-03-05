@@ -59,4 +59,3 @@ python2 ROSE_geneMapper.py \
 -o 191010_11tissue_SE \
 -g CANFAM3 \
 -i 191010_11tissue_SE.total.mg.4col_SuperEnhancers.table.txt
-
