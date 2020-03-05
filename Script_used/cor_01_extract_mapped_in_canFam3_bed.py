@@ -59,3 +59,4 @@ for file in listBed:
 		finally:
 			inFile.close()
 			outFile.close()
+

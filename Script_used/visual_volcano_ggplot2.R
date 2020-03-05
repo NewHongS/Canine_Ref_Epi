@@ -68,3 +68,5 @@ p <- ggplot(data=list_inFile, aes(x = Fold, y = -log10(p_value), colour = group)
   geom_text_repel(data=filter(list_inFile, annotation == "yes")
                   , aes(label=Gene), size = 2 , colour="black")
 p
+
+

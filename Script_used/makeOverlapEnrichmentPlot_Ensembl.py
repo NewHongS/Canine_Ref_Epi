@@ -43,4 +43,3 @@ for i in range(len(list_state)):
 			% (path_chromhmm, input_segment_file, path_db, output_file))
 
 
-		

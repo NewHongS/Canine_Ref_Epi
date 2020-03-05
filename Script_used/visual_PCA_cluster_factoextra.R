@@ -66,3 +66,4 @@ outPlot(outName)
 
 # Optimal number of clusters for k-means
 #fviz_nbclust(inFile_rowCol, kmeans, method = "gap_stat")
+

@@ -88,5 +88,3 @@ for canFam3 in listCanFam3:
 
 			break
 
-
-	
