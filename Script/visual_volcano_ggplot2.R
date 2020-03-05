@@ -2,11 +2,15 @@ library(ggplot2)
 library(ggrepel)
 library(dplyr)
 
-# Read Input File
 rm(list = ls())
-setwd("C:/Users/thsrm/Desktop/input")
-list_inFile = read.table('results.txt', header = TRUE ,sep = "\t")
+## Basic argument should be changed with your directory and files
+# Change my working Dir
+path="/Directory/"
+input_file_name = "table_format_input.txt"
 
+# Read Data
+setwd(path)
+inFile = read.table(input_file_name, sep="\t" ,header=T)#, row.names = 1)
 # check some attributes of the data
 colnames(list_inFile)
 # keep only the fields needed for the plot
@@ -28,6 +32,9 @@ main_title = "Scatter_test"
 label_x = "Log2 FC"
 label_y = "-Log10 p-value"
 inner_line_color = "gray30"
+
+
+
 ##-----------------------------------------------------------------
 ##-----------------------------------------------------------------
 colnames(list_inFile) = c("Gene", "Fold", "p_value")
