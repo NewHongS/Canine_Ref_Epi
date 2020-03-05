@@ -93,3 +93,5 @@ makeUCSCfile ${Input_name} -i /TagDirectory/Of/Control/ \
 # Peak calling: HOMER
 findPeaks ${Input_name} -i /TagDirectory/Of/Control/ -style factor
 findPeaks ${Input_name} -i /TagDirectory/Of/Control/ -fdr 0.01 -style histone
+
+

@@ -62,3 +62,4 @@ timeNow ()
 
 os.system("plotHeatmap --refPointLabel center --heatmapHeight 7 --heatmapWidth 4 -m output/%s.gz -out output/Dpt_1out_comMarix_%s.pdf --yMin 0 -z Binding -x Distance" % \
 	(outFileName, outFileName))
+

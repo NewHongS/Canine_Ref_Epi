@@ -134,4 +134,3 @@ outFile = paste0(date, "_Human_Mouse")
 outPlot(outFile)
 
 write.table(resdat2a, paste0(outFile, ".txt"), sep="\t", row.names = F, quote = F)
-

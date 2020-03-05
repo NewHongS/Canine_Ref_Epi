@@ -143,3 +143,4 @@ command = "python cor_03_calculate_correlation.py %s/03_matching_file_edit \
 	input_correlation_zero_table %s/04_correlation" % (outFold, outFold)
 
 os.system(command)
+
