@@ -33,6 +33,7 @@ STAR --genomeDir /STARindex/ \
 --outSAMstrandField intronMotif \
 --outSAMtype BAM Unsorted \
 --outFileNamePrefix ${Input_name} \
+--readFilesCommand zcat \
 --readFilesIn ${Input_name}_1.trim.fq.gz ${Input_name}_2.trim.fq.gz
 # Sort and index
 samtools sort -@ ${threads} ${Input_name}Aligned.out.bam > ${Input_name}.st.bam
