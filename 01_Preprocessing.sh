@@ -25,7 +25,7 @@ STAR --runMode genomeGenerate \
 --runThreadN ${threads} \
 --genomeDir /STARindex/ \
 --genomeFastaFiles ${Input_fa} \
---sjdbGT ${Input_gtf} \
+--sjdbGTFfile ${Input_gtf} \
 --sjdbOverhang 100
 
 STAR --genomeDir /STARindex/ \
